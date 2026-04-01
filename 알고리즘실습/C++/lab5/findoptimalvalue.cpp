@@ -22,9 +22,9 @@ int main(){
     int c, n;
     int tmp;
     cin >> c;
-    cin >> n;
-
+    
     for(int i = 0; i < c; i++){
+        cin >> n;
         matrix triangle(n,(vector<int>(n,-1)));
         for(int j = 0; j < n; j++){
             line a;
