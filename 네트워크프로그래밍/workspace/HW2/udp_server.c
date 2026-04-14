@@ -1,3 +1,5 @@
+//2022112332 jinoo kang
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -88,7 +90,7 @@ int main(int argc, char *argv[])
 			memcpy(res_packet.board, ans, sizeof(ans));
 			printf("[Server] TX cmd=%d, result = %d\n", res_packet.cmd, res_packet.result);
 			printBoard(board, ans);
-			//sleep(1);
+			sleep(1);
 			sendto(serv_sock, &res_packet, sizeof(res_packet), 0, (struct sockaddr*)&clnt_adr, clnt_adr_sz);
 		}
 		else

@@ -1,3 +1,5 @@
+//2022112332 jinoo kang
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -33,7 +35,6 @@ int main(int argc, char *argv[])
 	srand(time(NULL));
 	memset(&req_packet, 0, sizeof(REQ_PACKET));
 	memset(&res_packet, 0, sizeof(RES_PACKET));
-	//char board[BOARD_SIZE][BOARD_SIZE];
 	printf("------------------------------\n");
 	printf(" Finding Alphabet Game Client\n");
 	printf("------------------------------\n");
@@ -73,7 +74,6 @@ int main(int argc, char *argv[])
 			break;
 		}	
 		printBoard(res_packet.board);
-		//sleep(1);
 	}
 	close(sock);
 	printf("Exit Client Program\n");
